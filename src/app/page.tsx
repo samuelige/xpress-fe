@@ -1,9 +1,10 @@
-import Image from 'next/image'
+"use client";
+import Register from '@/container/Register'
+
 
 export default function Home() {
   return (
-    <div>
-      Hello, world
-    </div>
+    <Register/>
+    
   )
 }
