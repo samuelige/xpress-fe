@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import "@/styles/globals.css";
 import MuiTheme from '@/_lib/MuiTheme';
+import AuthNavbar from '@/container/AuthNavbar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MuiTheme>{children}</MuiTheme>
+        <MuiTheme>
+          <AuthNavbar/>
+          {children}
+        </MuiTheme>
       </body>
     </html>
   )
