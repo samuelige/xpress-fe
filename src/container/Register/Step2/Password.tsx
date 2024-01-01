@@ -42,6 +42,7 @@ const Password:FC<PasswordProps> = (props) => {
                     setFieldValue={(e) => setConfirmPassword(e.target.value)}
                     values={confirmPassword}
                     className={'mt-2'}
+                    name={"confirmPassword"}
                 />
                 {confirmPassword && values?.password && confirmPassword !== values?.password && (
                     <FormError message={"Confirm password does not match"} />

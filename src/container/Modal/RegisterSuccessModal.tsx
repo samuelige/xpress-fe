@@ -6,14 +6,16 @@ import Portal from "@/_shared/HOC/Portal";
 import CustomModal from "@/_shared/components/CustomModal";
 import AppContext from "@/_lib/contextApi";
 import { pending } from "@/_shared/assets/icons";
+import { useRouter } from "next/navigation";
 
 
 const RegisterSuccessModal = () => {
+  const router = useRouter();
   const { toggleRegisterSuccessModal, setToggleRegisterSuccessModal} =
     useContext(AppContext);
-  
 
   const handleContinue = () => {
+    router.push('/sign-in');
     setToggleRegisterSuccessModal(false);
   };
 
