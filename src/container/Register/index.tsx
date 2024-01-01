@@ -8,6 +8,7 @@ import RegisterSuccessModal from '../Modal/RegisterSuccessModal';
 import { registerValidationSchema } from './validation';
 
 const Register = () => {
+    
     const [steps, setSteps] = useState<number>(0);
     const { setToggleRegisterSuccessModal} =
     useContext(AppContext);
@@ -59,6 +60,7 @@ const Register = () => {
             <AuthLayout
                 title={"Welcome to Xpress Rewards"}
                 subTitle={"Complete the form below to get started"}
+                height={"h-[28.5rem]"}
             >
                 {
                     steps === 0 && (

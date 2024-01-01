@@ -6,9 +6,10 @@ import { Divider } from '@mui/material';
 interface AuthLayoutProps {
     title: string;
     subTitle: string;
+    height?: string;
     children: React.ReactNode
   }
-const AuthLayout:FC<AuthLayoutProps> = ({title, subTitle, children}) => {
+const AuthLayout:FC<AuthLayoutProps> = ({title, height, subTitle, children}) => {
   return (
     <div className='w-[32.625rem] bg-white rounded-lg mx-auto mt-[5.75rem] shadow-25'>
         <section className='w-full px-10 pt-10'>
@@ -19,7 +20,7 @@ const AuthLayout:FC<AuthLayoutProps> = ({title, subTitle, children}) => {
             <Divider className="mt-4 border-2 border-gray-500" />
         </section>
         
-        <section className='h-[28.5rem] mt-6 pl-10 pr-7 pb-10 overflow-y-auto [&::-webkit-scrollbar]:appearance-none'>
+        <section className={`${height && height} mt-6 pl-10 pr-7 pb-10 overflow-y-auto [&::-webkit-scrollbar]:appearance-none`}>
             {
                 children
             }
