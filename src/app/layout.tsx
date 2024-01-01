@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import "@/styles/globals.css";
 import MuiTheme from '@/_lib/MuiTheme';
 import AuthNavbar from '@/container/AuthNavbar';
+import ContextProvider from '@/_lib/Context/ContextProvider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,10 +20,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <MuiTheme>
-          <AuthNavbar/>
-          {children}
-        </MuiTheme>
+        <ContextProvider>
+          <MuiTheme>
+            <div className='bg-gray-500 h-screen'>
+              <AuthNavbar/>
+              {children}
+            </div>
+            
+          </MuiTheme>
+        </ContextProvider>
+        <div id="portal-root"></div>
+        
       </body>
     </html>
   )
