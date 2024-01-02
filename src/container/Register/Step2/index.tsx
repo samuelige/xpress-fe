@@ -46,7 +46,7 @@ const Step2:FC<Step2Props> = (props) => {
             <Button
                 variant="contained"
                 type="submit"
-                disabled={!isValid || isSubmitting}
+                disabled={isSubmitting}
                 className="[&.MuiButtonBase-root]:w-[11.5625rem] [&.MuiButtonBase-root]:h-[3.5rem]"
             >
                 Submit
