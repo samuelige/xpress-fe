@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import MuiTheme from '@/_lib/MuiTheme';
 import AuthNavbar from '@/container/AuthNavbar';
 import ContextProvider from '@/_lib/Context/ContextProvider';
+import MainLayout from '@/container/MainLayout';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,11 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ContextProvider>
           <MuiTheme>
-            <div className='bg-gray-500 h-screen'>
-              <AuthNavbar/>
+            <MainLayout>
               {children}
-            </div>
-            
+            </MainLayout>
           </MuiTheme>
         </ContextProvider>
         <div id="portal-root"></div>

@@ -9,14 +9,19 @@ import { Button, TextField } from '@mui/material';
 import FormError from '@/_shared/components/FormError';
 import CustomPasswordField from '@/_shared/components/CustomPasswordField';
 import { signInValidationSchema } from './validation';
+import { useRouter } from 'next/navigation';
 
 const SignIn = () => {
+    const router = useRouter();
     
     const onSubmit = async (values: any) => {
         const payload = {
             ...values
         }
         console.log(payload);
+
+        router.push('/dashboard')
+
     };
     const formik = useFormik({
 		initialValues:{
