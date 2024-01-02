@@ -9,7 +9,7 @@ const MainLayout:FC<PropsWithChildren> = ({children}) => {
     <>
         {
             currentPathName === '/' || currentPathName === '/sign-in' ? (
-                <div className='bg-gray-500 h-screen'>
+                <div className='bg-gray-500 px-4 pb-4 md:pb-0 md:px-0 h-full md:h-screen'>
                     <AuthNavbar/>
                     {children}
                 </div>
