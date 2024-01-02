@@ -5,7 +5,7 @@ import { FC, PropsWithChildren, useContext } from 'react';
 import Navbar from './Navbar';
 
 const DashboardLayoutContainer:FC<PropsWithChildren> = ({children}) =>{
-  const {brokenToMediumScreen, toggleSmMenu, setToggleSmMenu} = useContext(AppContext);
+
   
   return (
     <div className="flex">
@@ -14,12 +14,8 @@ const DashboardLayoutContainer:FC<PropsWithChildren> = ({children}) =>{
         {/* Main component on basis of selected navigation from nav bar */}
         <main className="grow bg-gray-500  h-screen w-full  overflow-auto">
           <Navbar/>
-          {brokenToMediumScreen && (
-            <button className="sb-button" onClick={() => setToggleSmMenu(!toggleSmMenu)}>
-              Toggle
-            </button>
-          )}
-          <div className="py-8 pl-[2.19rem] pr-8 w-full">
+          
+          <div className="py-8 px-4 md:pl-[2.19rem] md:pr-8 w-full">
             {children}
           </div>
           

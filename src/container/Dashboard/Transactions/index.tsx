@@ -106,7 +106,7 @@ const Transactions = () => {
 
   return (
     <div className='space-y-8'>
-        <div className='py-3 px-4 flex flex-row items-center justify-between'>
+        <div className='py-3  flex flex-col md:flex-row md:items-center md:justify-between'>
             <div className='rounded-lg flex flex-row border-[1px] text-sm text-black-200 font-semibold'>
                 <Select
                     value={filterDeals}
@@ -125,7 +125,7 @@ const Transactions = () => {
                     <MenuItem value={"Deactivated Verifiers"}>Deactivated Verifiers</MenuItem>
                 </Select>
             </div>
-            <div className="mt-3 space-x-4 lg:mt-0 w-full flex flex-row lg:w-[17.875rem] xl:w-[30rem] ">
+            <div className="mt-3 space-y-4 md:space-y-0 md:space-x-4 lg:mt-0 w-full flex flex-col md:flex-row lg:w-[17.875rem] xl:w-[30rem]">
                 <div className="flex-1">
                     <TableSearch
                         filter={globalFilter}

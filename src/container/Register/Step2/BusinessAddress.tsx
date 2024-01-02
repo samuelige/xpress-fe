@@ -84,11 +84,11 @@ const BusinessAddress:FC<BusinessAddressProps> = (props) => {
                         name={"state"}
                     >
                         <MenuItem value="">
-                            <p className="text-base text-gray-500">Select state</p>
+                            <p className="text-base text-black-200">Select state</p>
                         </MenuItem>
-                        <MenuItem value={"health"}>Lagos</MenuItem>
-                        <MenuItem value={"beauty"}>Oyo</MenuItem>
-                        <MenuItem value={"it_solution"}>Ogun</MenuItem>
+                        <MenuItem value={"Lagos"}>Lagos</MenuItem>
+                        <MenuItem value={"Oyo"}>Oyo</MenuItem>
+                        <MenuItem value={"Ogun"}>Ogun</MenuItem>
                     </Select>
                     {touched.state && errors.state && (
                         <FormError message={errors.state} />

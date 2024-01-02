@@ -96,7 +96,7 @@ const BusinessInfo:FC<BusinessInfoProps> = (props) => {
                     name={"business_category"}
                 >
                     <MenuItem value="">
-                        <p className="text-base text-gray-500">Select category</p>
+                        <p className="text-base text-black-200">Select category</p>
                     </MenuItem>
                     <MenuItem value={"health"}>Health</MenuItem>
                     <MenuItem value={"beauty"}>Beauty</MenuItem>

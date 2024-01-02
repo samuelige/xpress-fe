@@ -60,7 +60,7 @@ const Register = () => {
             <AuthLayout
                 title={"Welcome to Xpress Rewards"}
                 subTitle={"Complete the form below to get started"}
-                height={"h-[28.5rem]"}
+                height={" md:h-[28.5rem]"}
             >
                 {
                     steps === 0 && (
