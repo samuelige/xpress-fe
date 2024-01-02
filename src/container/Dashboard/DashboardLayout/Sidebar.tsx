@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext, useState } from 'react'
 import { Sidebar} from "react-pro-sidebar";
 import { Divider, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";

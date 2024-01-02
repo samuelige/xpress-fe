@@ -1,7 +1,7 @@
-"use client"
+"use client";
+
 import SidebarContainer from './Sidebar'
-import AppContext from '@/_lib/contextApi'
-import { FC, PropsWithChildren, useContext } from 'react';
+import { FC, PropsWithChildren} from 'react';
 import Navbar from './Navbar';
 
 const DashboardLayoutContainer:FC<PropsWithChildren> = ({children}) =>{
