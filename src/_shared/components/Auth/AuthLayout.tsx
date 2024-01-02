@@ -11,7 +11,7 @@ interface AuthLayoutProps {
   }
 const AuthLayout:FC<AuthLayoutProps> = ({title, height, subTitle, children}) => {
   return (
-    <div className='w-full md:w-[32.625rem] bg-white rounded-lg mx-auto mt-[5.75rem] shadow-25'>
+    <div className='w-full md:w-[32.625rem] bg-white rounded-lg mx-auto mt-[5.75rem] xl:mt-[3.75rem] xl-1:mt-[5.75rem] shadow-25'>
         <section className='w-full px-10 pt-10'>
             <AuthTitleTexts
                 title={title}
